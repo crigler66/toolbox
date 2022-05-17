@@ -1,0 +1,71 @@
+*,*:after,*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  background: #efefef;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 480px;
+  background: #fff;
+  margin: 1em auto;
+  border: 4px solid #e2e2e2;
+  box-shadow: 0 10px 9px -6px #c5c5c5;
+  border-top-width: 25px;
+  border-bottom-width: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+div#calendar {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+}
+
+table {
+  width: 100%;
+  font-family: sans-sans-serif;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.head_cal {
+  background: #fff;
+  color: #85baff;
+  font-size: 2rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+.subhead_cal {
+  background: #85baff;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.week_cal {
+  background: #fff;
+  color: #d7d7d7;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.white_cal {
+  background: #ececec !important;
+}
