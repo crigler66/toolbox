@@ -128,9 +128,9 @@ li.dropdown {
 .main_promo h1 {
   text-align: center;
   color: whitesmoke;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
-  padding: 5%;
+  padding: 2%;
 }
 
 /* Fake image, just for this example */
