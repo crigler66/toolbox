@@ -1,0 +1,22 @@
+.product-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product-item {
+  background: rgb(241, 207, 241);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  line-height: 35px;
+  color: black;
+  text-align: center;
+  border-width: 1px;
+  border-color: black;
+  border-style: double;
+}
