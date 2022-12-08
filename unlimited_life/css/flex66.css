@@ -11,11 +11,15 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 6px;
+  padding: 3px;
   text-align: center;
-  background: #cf61e0;
-  color: white;
+  background: rgb(241, 207, 241);
+  color: black;
   font-family: Goudy Old Style;
+}
+
+.logo {
+  max-width: 15%;
 }
 
 /* Style the top navigation bar */
