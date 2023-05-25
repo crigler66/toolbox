@@ -12,13 +12,13 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: #405752;
+  background: #133c55;
   color: white;
 }
 
 .top_banner {
   padding: 0.5px;
-  background-color: lightslategrey;
+  background-color: #386fa4;
   text-align: center;
   align-content: center;
   padding-left: 25%;
@@ -42,13 +42,13 @@ body {
   border-bottom: 2px;
   border-left: 2px;
   border-right: 2px;
-  background-color: lightslategray;
+  background-color: #386fa4;
 }
 
 .sidenav a {
   text-decoration: none;
   display: block;
-  background-color: #405752;
+  background-color: #386fa4;
   border-color: white;
   border-style: double;
   padding: 1px;
@@ -71,24 +71,27 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 35%;
-  background-color: lightslategray;
+  flex: 25%;
+  background-color: #59a5d8;
   padding: 5px;
 }
 
 /* Main column */
 .main {
-  flex: 65%;
-  background-color: rgb(0, 0, 0);
+  flex: 75%;
+  background-color: #59a5d8;
+  padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .main_promo {
   width: auto;
-  height: auto;
-  background-color: rgb(0, 0, 0);
-  background-image: url("img/mainpromo1.jpg");
+  height: 485px;
+  background-image: url("img/golden\ time.1..jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  border-color: white;
+  border-style: double;
   opacity: 85%;
 }
 
@@ -108,9 +111,9 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  background: #ddd;
+  background: #133c55;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -118,5 +121,15 @@ body {
   .row,
   .navbar {
     flex-direction: column;
+  }
+
+  .main_promo {
+    width: auto;
+    height: 265px;
+    background-image: url("img/golden\ time.1..jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-color: white;
+    border-style: double;
   }
 }
