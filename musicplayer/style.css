@@ -160,3 +160,167 @@ body {
   color: #adadad;
   grid-column-start: span 2;
 }
+
+path {
+  transition: 0.3s;
+}
+
+.track-information > *:hover {
+  color: white;
+}
+
+.track-information > *:hover path {
+  fill: white !important;
+}
+
+.track-information-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.track-information-texts {
+  width: 7rem;
+}
+
+.track-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  grid-column-start: span 2;
+}
+
+.track-progress-bar {
+  width: 65%;
+  height: 10px;
+  background: #dc143c7a;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.track-loading {
+  width: 35px;
+  height: 100%;
+  background: #dc143c;
+  position: absolute;
+  border-radius: 4px;
+  animation: track-loading is ease-in-out infinite alternate;
+  left: -5px;
+  transform: scaleX(1);
+}
+
+@keyframes track-loading {
+  25% {
+    transform: scaleX(1.5);
+  }
+  75% {
+    transform: scaleX(1.5);
+  }
+  100% {
+    transform: scaleX(1);
+    left: calc(100% - 30px);
+  }
+}
+
+.track-current-time-progress-bar {
+  width: 0;
+  height: 10px;
+  background-color: #dc143c;
+  border-radius: 4px;
+}
+
+.track-time {
+  color: white;
+  margin-bottom: 4px;
+  width: 28px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column-start: span 2;
+}
+
+.button {
+  width: 4.6rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button > * {
+  width: 2.5rem;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.volume-wrapper > * {
+  position: absolute;
+  width: 100%;
+}
+
+.volume-button > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-button img,
+.volume-button svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+}
+
+.waves-volume-button > * {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-number {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 6px;
+  opacity: 0;
+}
+
+.volume-cross {
+  opacity: 0;
+}
+
+.volume-cross svg {
+  transform: translateX(2px);
+}
+
+.volume-wrapper:hover .volume-button {
+  opacity: 0 !important;
+}
+
+.volume-wrapper:hover .volume-number {
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 460) {
+  html {
+    font-size: 10px;
+  }
+}
